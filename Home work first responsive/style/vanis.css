@@ -1,0 +1,40 @@
+
+.venice-img-1 img{
+    width: 400px;
+    border: 1px solid black;
+    border: none;
+}
+.description-1{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border: none;
+}
+.container-1{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.venice-img-2 img{
+    width: 400px;
+}
+.description-2{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border: none;
+
+}
+.container-2{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:576px) {
+    .container-1{
+        flex-direction: column;
+    }
+    .container-2{
+        flex-direction: column-reverse;
+    }
+}

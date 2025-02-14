@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox viewport</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+            border: 1px solid blue;
+            border: none;
+
+        }
+            
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            width:490px;
+            border-radius:7px;
+        }
+        .card-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            margin: 5px;
+            border: 1px solid tomato;
+            border-radius: 6px;
+            height: 350px;
+            width:150px;
+            border: none;
+            font-size: x-large;
+        }
+        .card-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightyellow;
+            margin: 5px;
+            border: 1px solid tomato;
+            border-radius: 6px;
+            height: 350px;
+            width:350px;
+            border: none;
+            font-size: x-large;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+            .card-1{
+                height: 30%;
+                width: 28rem;
+            }
+            .card-2{
+             width: 28rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+        <div class="card-1">Left</div>
+        <div class="card-2">Right</div>
+        </div>
+        
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+.img-1, .img-2{
+    border: 1px solid chocolate;
+    border-radius:10px ;
+    border: none;
+}
+.container-1, .container-2{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.description-1, .description-2{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    width: 50%;
+}
+.btn-1, .btn-2{
+    background-color: blue;
+    padding: 5px;
+    border-radius: 4px;
+}
+@media screen and (max-width:576px) {
+    .container-1, .container-2{
+        flex-direction: column;
+    }
+}
