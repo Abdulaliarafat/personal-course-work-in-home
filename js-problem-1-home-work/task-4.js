@@ -1,5 +1,11 @@
-function countWord(sentences){
-    let word = sentences.split
-    
+function findSentences(sentences){
+    let words = sentences.split(" ");
+    let longest = " ";
+    for(let word of words){
+        if(word.length > longest.length){
+            longest = word;
+        }
+    }
+    return longest;
 }
-console.log(countWord('I am learning Programming to become a programmer'))
+console.log(findSentences('I am learning Programming to become a programmer'));
